@@ -17,5 +17,5 @@ class SecondsPastMidnight {
        // closing the scanner object
        scanner.close();
    }// ends the main method
-} //ends the class
+} //ends the classs
  

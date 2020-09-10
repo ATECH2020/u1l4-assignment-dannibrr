@@ -12,11 +12,8 @@ class AnalogClock {
        /*
         *  your code goes here
         */
-       int currentHour = degree/30;
-       int currentHourDegree = currentHour * 30;
-       int minutes = degree - currentHourDegree;
-       int minsDegree = (30 - minutes) * 6;
-       System.out.println("The minutes in degrees that have passed is " + minsDegree + " degrees");
+       int minuteDegree = (degree % 30) * 12;
+       System.out.print(minuteDegree);
        // closing the scanner object
        scanner.close();
    }

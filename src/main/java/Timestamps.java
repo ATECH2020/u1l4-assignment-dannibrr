@@ -13,8 +13,6 @@ class Timestamps {
        int hours2 = scanner.nextInt();
        int minutes2 = scanner.nextInt();
        int seconds2 = scanner.nextInt();
-       System.out.println(hours1 + ":" + minutes1 + "." + seconds1 + " 1st time stamp");
-       System.out.println(hours2 + ":" + minutes2 + "." + seconds2 + " 2nd time stamp");
     
  
        /*
@@ -28,10 +26,11 @@ class Timestamps {
        int secConvert = secPassed * 1;
        int timePassed = hoursConvert + minsConvert + secConvert;
  
-       System.out.println(timePassed + " seconds have passed");
+       System.out.print(timePassed);
       
  
        // closing the scanner object
        scanner.close();
    }
 }
+ 

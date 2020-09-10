@@ -1,24 +1,26 @@
 import java.util.Scanner;
  
-class SecondsPastMidnight {
+class StudentDesks {
    public static void main(String[] args) {
  
        //Creates a new scanner for user input
        Scanner scanner = new Scanner(System.in);
  
-       //Reads int from user
-       int numSec = scanner.nextInt();
+       //Reads ints from user
+       int firstClass = scanner.nextInt();
+       int secondClass = scanner.nextInt();
+       int thirdClass = scanner.nextInt();
  
-       //Your code goes here
-       System.out.println(numSec + " seconds have passed since midnight");
-       int minInHour = 60;
-       int secInHour = minInHour * 60;
-       int numMinutes = numSec/60;
-       int numHours = numSec/secInHour;
-       System.out.println(numHours + " hours have passed since midnight");
-       System.out.println(numMinutes + " minutes have passed since midnight");        
+       /*
+        *  your code goes here
+        */
+       int firstDesk = (firstClass / 2) + firstClass % 2;
+       int secondDesk = (secondClass / 2) + secondClass % 2;
+       int thirdDesk = (thirdClass / 2) + thirdClass % 2;
+       int totalDesk = firstDesk + secondDesk+ thirdDesk;
  
+       System.out.print(totalDesk);
        // closing the scanner object
        scanner.close();
-   }// ends the main method
-} //ends the class
+   }
+}

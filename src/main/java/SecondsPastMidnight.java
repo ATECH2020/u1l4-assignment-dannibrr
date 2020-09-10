@@ -9,7 +9,7 @@ class SecondsPastMidnight {
        //Reads int from user
        int numSec = scanner.nextInt();
  
-       //Your code goes here
+       //Your code goes here, test
        int numMinutes = numSec/60;
        int numHours = numSec/3600;
        System.out.print(numMinutes + " " + numHours);        
